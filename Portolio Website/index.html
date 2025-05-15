@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batuhan Sancak | Web Developer & Designer</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="light">
+  <header id="header" class="fixed w-full backdrop-blur-sm z-50 transition-all duration-200">
+    <div class="container">
+      <div class="header-content">
+        <a href="#hero" class="logo">
+          <span class="code-icon">&lt;/&gt;</span>
+          <span>Batuhan Sancak</span>
+        </a>
+        <nav class="desktop-nav">
+          <a href="#about" class="nav-link">Hakkımda</a>
+          <a href="#projects" class="nav-link">Projelerim</a>
+          <a href="#blog" class="nav-link">Bloglarım</a>
+          <a href="#contact" class="nav-link">İletişim</a>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+            <i class="theme-icon"></i>
+          </button>
+        </nav>
+
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu">
+          <i id="menu-icon" class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-nav" class="mobile-nav">
+      <div class="container">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#blog" class="mobile-nav-link">Blog</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <div class="mobile-theme-toggle">
+          <span>Dark Mode</span>
+          <button id="mobile-theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+            <i class="theme-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text animate-fade-in">
+          <h1 class="hero-title">
+            Merhaba Ben <span class="text-primary">Batuhan Sancak</span>
+            <br>Web Developer & Designer
+          </h1>
+          <p class="hero-description">
+            İşletmelerin büyümesine yardımcı olan modern teknolojilerle güzel, duyarlı web siteleri oluşturuyorum.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Projelerim</a>
+            <a href="#contact" class="btn btn-outline">iletişim</a>
+          </div>
+        </div>
+        <div class="hero-image animate-slide-up">
+          <div class="image-backdrop"></div>
+          <img 
+            src="./photos/batuhanFoto.jpg"
+            alt="Batuhan Sancak Profil Fotografi"
+          >
+        </div>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <a href="#about">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          Benim <span class="text-primary">Hakkımda</span>
+        </h2>
+      </div>
+      <div class="about-content">
+        <div class="about-image animate-fade-in">
+          <img 
+            src="./photos/batufoto2.jpg"
+            alt=""
+          >
+        </div>
+        <div class="about-text animate-slide-up">
+          <p>
+           Bilgisayar Programlama alanında tutkulu ve yenilikçi bir bireyim. Teknolojiyi keşfetme merakım, sürekli gelişimime yön veriyor ve edindiğim bilgileri gerçek dünya problemlerine uygulamaktan büyük keyif alıyorum. Python, C#, HTML, CSS, JavaScript ve Java gibi dillerle çeşitli projelerde çalıştım. Her geçen gün yeni şeyler öğrenmeye kararlıyım.
+
+          Takım çalışmasına yatkın, çözüm odaklı ve öğrenmeye istekli bir birey olarak projelere katkı sağlamaya ve yenilikçi çözümler üretmeye gayret ediyorum. Yazılım geliştirme sürecinin hem teknik hem yaratıcı yönlerine büyük ilgi duyuyorum. Kullanıcı deneyimini ön planda tutan, sade ama işlevsel arayüzler tasarlamayı seviyorum.
+          </p>
+          <p>
+           Ayrıca, açık kaynak projelere katkı sağlamak ve güncel teknolojileri yakından takip etmek benim için önemli. Girişimci bir ruhla hareket ederek, hem bireysel projeler geliştiriyor hem de takım içinde etkin roller üstlenmeye özen gösteriyorum.
+          </p>
+          <div class="skills-container">
+            <h3 class="skills-title">Yeteneklerim</h3>
+            <div class="skills-list" id="skills-list">
+            </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+           <span class="text-primary">Projelerim</span>
+        </h2>
+      </div>
+      
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">Tüm Projeler</button>
+        <button class="filter-btn" data-filter="web">Web Programlama</button>
+        <button class="filter-btn" data-filter="Python">Python</button>
+      </div>
+      
+      <div class="projects-grid" id="projects-grid">
+      </div>
+      
+
+    </div>
+  </section>
+
+  <section id="blog" class="blog-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          En son <span class="text-primary">Bloglarım</span>
+        </h2>
+      </div>
+      
+      <div class="blog-grid" id="blog-grid">
+      </div>
+      
+     
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          İletişime <span class="text-primary">Geçin</span>
+        </h2>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info animate-fade-in">
+          <div class="info-card">
+            <h3 class="card-title">İletişim Adreslerim</h3>
+            <p class="card-text">
+                Aklınızda bir proje mi var? Hedeflerinize ulaşmanıza nasıl yardımcı olabileceğimi tartışalım. Bu kanallardan herhangi biri aracılığıyla bana ulaşmaktan çekinmeyin.
+            </p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="method-details">
+                  <h4>Email</h4>
+                  <a href="mailto:Batuhan.sancak215@gmail.com">Batuhan.sancak215@gmail.com</a>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="method-details">
+                  <h4>Phone</h4>
+                  <a href="tel:+11234567890">+90 505 402 2001</a>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="method-details">
+                  <h4>Adres</h4>
+                  <p>Türkiye,İzmir</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <h4>Beni Takip Et!</h4>
+              <div class="social-icons">
+                <a href="https://github.com/BatuhanSancak" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://tr.linkedin.com/in/batuhan-sancak-19927526b?trk=public_profile_browsemap" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          
+                <a href="https://tr.linkedin.com/in/batuhan-sancak-19927526b?trk=public_profile_browsemap" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container animate-slide-up">
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">İsminiz</label>
+                <input type="text" id="name" name="name" placeholder="Lütfen İsminizi Giriniz" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Lütfen Emailinizi Giriniz" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Konu</label>
+              <input type="text" id="subject" name="subject" placeholder="Lütfen Konuyu Giriniz" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Mesajınız</label>
+              <textarea id="message" name="message" rows="5" placeholder="Lütfen Mesajınızı Giriniz" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block"> Gönder</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <a href="#hero">
+            <span class="code-icon">&lt;/&gt;</span>
+            <span>Batuhan Sancak</span>
+          </a>
+          <p>Web Tasarımı Ve Programlama Benim işim!!</p>
+        </div>
+        
+        <div class="footer-social">
+          <a href="https://github.com/BatuhanSancak" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://tr.linkedin.com/in/batuhan-sancak-19927526b?trk=public_profile_browsemap" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          
+                <a href="https://tr.linkedin.com/in/batuhan-sancak-19927526b?trk=public_profile_browsemap" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; <span id="current-year"></span> Batuhan Sancak. All rights reserved.
+        </p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
